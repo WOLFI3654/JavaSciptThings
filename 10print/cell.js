@@ -77,7 +77,7 @@ function Cell(x, y) {
     } else if (from == "right") {
       if (!this.dir) {
         this.colorBottom = color;
-        if (this.y / spacing < height / spacing) {
+        if (this.y / spacing + 1 <= height / spacing) {
           pourTo = cells[this.y / spacing + 1][this.x / spacing];
           if (pourTo) {
             pourTo.poorLiquid("top", color);
