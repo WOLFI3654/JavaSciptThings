@@ -13,10 +13,14 @@ var cells = [];
 var gravity = true;
 function setup() {
 
-  createButton("Toggle Gravity").mousePressed(toggleGravity);
-  createButton("Reload").mousePressed(loadCells);
-
-  createCanvas(400, 400);
+  mp = createButton("Toggle Gravity");
+  mp.mousePressed(toggleGravity);
+  r = createButton("Reload");
+  r.mousePressed(loadCells);
+  createCanvas(400, 400).parent("desc");
+  createP("").parent("desc");
+  mp.parent("desc");
+  r.parent("desc");
 
   background(0);
 
