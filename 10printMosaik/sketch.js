@@ -11,7 +11,7 @@ let spacing = 20;
 let index = 0;
 var cells = [];
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(400, 400).parent("desc");
   background(0);
   cells.push(new Cell(0, 0));
 }
