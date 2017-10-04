@@ -2,7 +2,7 @@ function Cell(x, y) {
 
   this.x = x;
   this.y = y;
-  this.dir = noise(x,y) < 0.5;
+  this.dir = noise(x/spacing,y/spacing) < 0.5;
   this.colorTop = 200;
   this.colorBottom = 100;
   this.show = function() {
