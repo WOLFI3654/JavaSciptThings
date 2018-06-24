@@ -9,5 +9,6 @@ function setup() {
 }
 
 function draw(){
+  background(127);
   text(locationData.speed,0,0,50,80);
 }
