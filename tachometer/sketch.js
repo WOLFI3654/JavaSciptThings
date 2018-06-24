@@ -5,15 +5,10 @@ function preload(){
 var p;
 function setup() {
   createCanvas(600,300);
-
+  p = createP(locationData.speed);
 }
 
 function draw(){
-  background(127);
-  textSize(20);
-  text(locationData.longitude,0,0);
-  text(locationData.latitude,0,10);
-  text(locationData.speed,0,20);
-
-
+  p.remove();
+  p = createP(locationData.speed);
 }
