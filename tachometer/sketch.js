@@ -4,18 +4,10 @@ function preload(){
 }
 var p;
 function setup() {
-    print(locationData.latitude)
-    print(locationData.longitude)
-    print(locationData.accuracy)
-    print(locationData.altitude)
-    print(locationData.altitudeAccuracy)
-    print(locationData.heading)
-    print(locationData.speed)
+  createCanvas(600,300);
 
 }
 
 function draw(){
-  createP(locationData.latitude);
-  createP(locationData.longitude);
-  createP(locationData.speed);
+  text(locationData.speed,0,0,50,80);
 }
