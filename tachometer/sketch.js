@@ -11,7 +11,7 @@ function setup() {
     print(locationData.altitudeAccuracy)
     print(locationData.heading)
     print(locationData.speed)
-    p =
+
 }
 
 function draw(){
